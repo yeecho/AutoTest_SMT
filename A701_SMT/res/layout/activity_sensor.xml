@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/lightView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="光线" />
+        
+        <TextView
+            android:id="@+id/lightTV"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/proxiView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="距离" />
+        
+        <TextView
+            android:id="@+id/proxiTV"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/tempView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="温度" />
+        
+        <TextView
+            android:id="@+id/tempTV"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

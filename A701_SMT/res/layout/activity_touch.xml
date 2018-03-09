@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_touch" >
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:text="请自行划线进行测试，若认为测试成功，请快速三次触碰屏幕退出"
+	    android:textColor="#20000000"
+	    android:textSize="64sp"/>
+	
+	<com.greatwall.smt.view.MyPaintPanel 
+	    android:id="@+id/touchView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+</RelativeLayout>
